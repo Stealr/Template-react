@@ -1,0 +1,30 @@
+@use "./variables" as *;
+@use "sass:map";
+
+@mixin container {
+  margin: 0 auto;
+  padding: 0 $mobile-fields;
+  max-width: $max-width-container;
+}
+
+@mixin max-media($breakpoint) {
+  $size: map.get($media-sizes, $breakpoint);
+
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
+// тут кросплатформенные и кроссбраузерные штуки
+@mixin filter-blur($value) {
+  -webkit-filter: blur($value);
+  -moz-filter: blur($value);
+  -o-filter: blur($value);
+  -ms-filter: blur($value);
+  filter: blur($value);
+}
+
+@mixin backdrop-blur($value) {
+  -webkit-backdrop-filter: blur($value);
+  backdrop-filter: blur($value);
+}
