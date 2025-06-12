@@ -16,15 +16,15 @@
 }
 
 // тут кросплатформенные и кроссбраузерные штуки
-@mixin filter-blur($value) {
-  -webkit-filter: blur($value);
-  -moz-filter: blur($value);
-  -o-filter: blur($value);
-  -ms-filter: blur($value);
-  filter: blur($value);
-}
+// @mixin filter-blur($value) {
+//   -webkit-filter: blur($value);
+//   -moz-filter: blur($value);
+//   -o-filter: blur($value);
+//   -ms-filter: blur($value);
+//   filter: blur($value);
+// }
 
-@mixin backdrop-blur($value) {
-  -webkit-backdrop-filter: blur($value);
-  backdrop-filter: blur($value);
-}
+// @mixin backdrop-blur($value) {
+//   -webkit-backdrop-filter: blur($value);
+//   backdrop-filter: blur($value);
+// }
